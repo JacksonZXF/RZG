@@ -76,7 +76,7 @@ class RootTabBarViewController: UIViewController ,UINavigationControllerDelegate
         
         let udf = UserDefaults.standard
         
-        if  udf.value(forKey: "userInfo") == nil {
+        if  udf.value(forKey: "userInfo") != nil {
             
             let logoSingle =  SingleOnce.shared;
             
